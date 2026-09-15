@@ -17,11 +17,12 @@ not yet approved.
 | P08 | Past top contributor to Bioconda | Candidate-confirmed historical contribution | [Bioconda repository](https://github.com/bioconda/bioconda-recipes) |
 | P09 | Introduced an alternative metric for protein–ligand docking performance | First-author MSc research at AstraZeneca; evaluation foundation, not a recent AI result | [Publication](https://doi.org/10.1021/ci800084x) |
 | P10 | Transcriptomic interpretation and integration with epigenomic data | Candidate-confirmed analysis and workflow contributions; the footprinting paper supports that method contribution, not the separate time-series integration claim | [Neuroimmune analysis reports](https://dyusuf.github.io/Transcriptional_Atlas_GI_Neurons_Inflammation/), [Neuron publication](https://doi.org/10.1016/j.neuron.2025.02.018), [footprinting publication](https://doi.org/10.1186/s13059-019-1654-y) |
+| P11 | Bcheck predicts RNase P RNA genes using descriptor and covariance models | First-author software and web-server publication | [Bcheck web server](http://rna.tbi.univie.ac.at/bcheck/), [publication](https://doi.org/10.1186/1471-2164-11-432) |
 
 ## Homepage selection — 15 September 2026
 
 The four expertise sections carry `data-evidence` references to this inventory:
-AI (P02, P03), omics (P01, P10), software (P05–P08), and training (P04, P07).
+AI (P02, P03), omics (P01, P10), software (P05–P08, P11), and training (P04, P07).
 Project summaries have been reduced to names, links and brief context.
 Detailed claims in this inventory remain source context, not additional claims
 made by the short homepage. The docking study (P09) is deferred from the homepage;

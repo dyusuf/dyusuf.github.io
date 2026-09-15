@@ -38,6 +38,8 @@ for link in parser.links:
         assert link[1:] in parser.ids
     elif link.startswith("mailto:"):
         assert link == "mailto:dilmurat.yusuf@gmail.com"
+    elif link == "http://rna.tbi.univie.ac.at/bcheck/":
+        pass  # Published legacy service URL; no HTTPS endpoint is available.
     else:
         parsed = urlparse(link)
         assert parsed.scheme == "https" and parsed.netloc
