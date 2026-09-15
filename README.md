@@ -1,6 +1,6 @@
-# Dilmurat Yusuf — Bioinformatics Portfolio
+# Dilmurat Yusuf — Portfolio
 
-Static source for a public portfolio hub. This repository links to the projects
+Static source for `https://dyusuf.github.io/`. This repository links to the projects
 that own each analysis or software artifact; it does not duplicate their source.
 
 ## Local preview
