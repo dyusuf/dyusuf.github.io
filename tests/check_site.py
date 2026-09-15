@@ -30,8 +30,9 @@ parser.feed(html)
 assert "Private draft" not in html
 assert "candidate review pending" not in html
 assert not parser.images, "The page should not depend on unattributed raster imagery"
-for anchor in ("work", "approach", "publications"):
+for anchor in ("expertise", "ai-evaluation", "omics", "software", "training", "contact"):
     assert anchor in parser.ids
+assert "https://www.linkedin.com/in/dilmurat-yusuf" in parser.links
 for link in parser.links:
     if link.startswith("#"):
         assert link[1:] in parser.ids

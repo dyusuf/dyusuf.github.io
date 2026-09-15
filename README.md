@@ -11,7 +11,15 @@ python3 -m http.server 8000
 
 Then open `http://localhost:8000`.
 
-## Repository boundaries
+## Page structure
+
+The homepage introduces four areas: biomedical AI, omics, scientific software,
+and training. Each has one short paragraph and links to supporting work.
+Keep methods, benchmark results, project histories and detailed scientific
+findings in the linked project pages. Preserve concise contribution labels
+where they clarify design, development or supervision.
+
+## Repository ownership
 
 - `bioinformatics-courses` owns the vascular-repair case study and workflow.
 - `BinfoNet` owns its evidence-retrieval implementation and evaluation.

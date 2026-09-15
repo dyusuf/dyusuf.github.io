@@ -3,151 +3,99 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Selected bioinformatics analyses, scientific software, and evidence-retrieval projects by Dilmurat Yusuf.">
+  <meta name="description" content="Dilmurat Yusuf — bioinformatics, biomedical AI evaluation, scientific software and researcher training. Selected projects and publications.">
+  <meta name="theme-color" content="#f8f7f3">
   <title>Dilmurat Yusuf — Portfolio</title>
+  <link rel="preload" href="assets/SFBMR10.woff" as="font" type="font/woff" crossorigin>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#work">Skip to selected work</a>
+  <a class="skip-link" href="#expertise">Skip to expertise</a>
   <header class="site-header">
-    <a class="wordmark" href="#top" aria-label="Dilmurat Yusuf, home">DY</a>
+    <a class="identity" href="#top">
+      <span class="identity-name">Dilmurat Yusuf</span>
+      <span class="identity-role">Bioinformatician</span>
+    </a>
     <nav aria-label="Primary navigation">
-      <a href="#work">Work</a>
-      <a href="#approach">Approach</a>
-      <a href="#publications">Publications</a>
+      <a href="#ai-evaluation">AI &amp; evidence</a>
+      <a href="#omics">Omics</a>
+      <a href="#software">Software</a>
+      <a href="#training">Training</a>
+      <a href="#contact">Contact</a>
     </nav>
-    <a class="contact-link" href="mailto:dilmurat.yusuf@gmail.com">Contact</a>
   </header>
 
   <main id="top">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="eyebrow">Bioinformatics · research software · scientific training</p>
-        <h1 id="hero-title">From complex omics data to evidence researchers can act on.</h1>
-        <p class="lede">I design reproducible analytical workflows, interpret omics data with experimental collaborators, and build tools that make biological evidence easier to inspect.</p>
-        <div class="actions">
-          <a class="button primary" href="#work">Explore selected work</a>
-          <a class="button secondary" href="https://scholar.google.com/citations?user=iHL58lUAAAAJ&amp;hl=en">View publications <span aria-hidden="true">↗</span></a>
-        </div>
-      </div>
-      <div class="hero-map" aria-hidden="true">
-        <svg viewBox="0 0 520 430" role="img">
-          <path d="M86 225 191 102 330 82 432 183 378 323 222 358 86 225Z"/>
-          <path d="M191 102 222 358M330 82 86 225M432 183 191 102M378 323 86 225M330 82 378 323"/>
-          <g><circle cx="86" cy="225" r="14"/><circle cx="191" cy="102" r="18"/><circle cx="330" cy="82" r="11"/><circle cx="432" cy="183" r="17"/><circle cx="378" cy="323" r="13"/><circle cx="222" cy="358" r="19"/></g>
-        </svg>
-        <span class="map-label label-a">analysis</span>
-        <span class="map-label label-b">workflow</span>
-        <span class="map-label label-c">evidence</span>
-      </div>
+    <section class="introduction" aria-labelledby="intro-title">
+      <p class="overline">Biology · Computation · Evidence</p>
+      <h1 id="intro-title">Understanding biology.<br>Building useful tools.</h1>
+      <p class="introduction-text">I analyze omics data and develop scientific software, including AI tools for biomedical evidence retrieval. Through experimental collaboration and researcher training, I help connect computational analysis with biological interpretation.</p>
+      <a class="inline-link" href="https://scholar.google.com/citations?user=iHL58lUAAAAJ&amp;hl=en">Publications <span aria-hidden="true">↗</span></a>
     </section>
 
-    <section id="work" class="section work" aria-labelledby="work-title">
+    <section id="expertise" aria-labelledby="expertise-title">
       <div class="section-heading">
-        <p class="eyebrow">Selected work</p>
-        <h2 id="work-title">Analysis, infrastructure, and interpretation</h2>
-        <p>Each project shows a different part of the path from biological question to reusable evidence.</p>
+        <h2 id="expertise-title">Areas of expertise</h2>
+        <span>Selected work</span>
       </div>
 
-      <article class="featured-card">
-        <div class="featured-copy">
-          <div class="project-meta"><span>Featured case study</span><span>Single-cell + spatial transcriptomics</span></div>
-          <h3>Vascular repair after myocardial infarction</h3>
-          <p class="project-question">How do injury-associated states in vessel-supporting cells change over time, and what does their spatial RNA signal add to the interpretation?</p>
-          <p>Reanalysis of published single-cell and spatial transcriptomic data, presented as a report for experimental collaborators and supported by a modular Nextflow workflow and tutorial.</p>
-          <ul class="project-points">
-            <li>Study-design and biological-replication audit</li>
-            <li>Cell-state, injury-comparison, and spatial analyses</li>
-            <li>Explicit limitations and a discriminating follow-up experiment</li>
+      <article id="ai-evaluation" class="expertise-area" aria-labelledby="ai-title" data-evidence="P02 P03">
+        <h3 id="ai-title">Biomedical AI<br> &amp; evidence</h3>
+        <div class="area-content">
+          <p>I develop and evaluate AI systems that retrieve and synthesize biomedical literature, with a focus on retrieval quality, citation support and the reliability of LLM-based assessment.</p>
+          <ul class="evidence-links" aria-label="Biomedical AI projects">
+            <li><a href="https://dyusuf.github.io/BinfoNet/"><span>BinfoNet</span><span aria-hidden="true">↗</span></a><span class="link-context">Retrieval &amp; evaluation</span></li>
+            <li><a href="https://binfowise.skillpie.io/"><span>BinfoWise</span><span aria-hidden="true">↗</span></a><span class="link-context">Literature mining · thesis supervision</span></li>
           </ul>
-          <a class="text-link" href="https://dyusuf.github.io/bioinformatics-courses/">Open the case study <span aria-hidden="true">↗</span></a>
-        </div>
-        <div class="signal-panel" aria-label="Project workflow">
-          <span>Biological question</span><i></i><span>Single-cell evidence</span><i></i><span>Spatial context</span><i></i><span>Next experiment</span>
         </div>
       </article>
 
-      <div class="project-grid">
-        <article class="project-card accent-blue">
-          <div class="project-meta"><span>Current development</span><span>Evidence retrieval</span></div>
-          <h3>BinfoNet</h3>
-          <p>Connects genes and biological questions with relevant publications, organizing title- and abstract-level evidence and citations for inspectable interpretation.</p>
-          <a class="text-link" href="https://dyusuf.github.io/BinfoNet/">Public overview and evaluation case <span aria-hidden="true">↗</span></a>
-        </article>
+      <article id="omics" class="expertise-area" aria-labelledby="omics-title" data-evidence="P01 P10">
+        <h3 id="omics-title">Omics analysis<br> &amp; interpretation</h3>
+        <div class="area-content">
+          <p>I integrate transcriptomic and epigenomic data to investigate biological questions with experimental collaborators. Current work extends to single-cell and spatial analysis.</p>
+          <ul class="evidence-links" aria-label="Omics analyses">
+            <li><a href="https://dyusuf.github.io/bioinformatics-courses/"><span>Vascular repair</span><span aria-hidden="true">↗</span></a><span class="link-context">Single-cell &amp; spatial case study</span></li>
+            <li><a href="https://doi.org/10.1016/j.neuron.2025.02.018"><span>Neuroimmune transcriptomics</span><span aria-hidden="true">↗</span></a><span class="link-context">Neuron · <a href="https://dyusuf.github.io/Transcriptional_Atlas_GI_Neurons_Inflammation/">Analysis reports</a></span></li>
+          </ul>
+        </div>
+      </article>
 
-        <article class="project-card accent-gold">
-          <div class="project-meta"><span>Master’s thesis supervision</span><span>Literature mining</span></div>
-          <h3>BinfoWise</h3>
-          <p>Turns 3,199 papers catalogued by 10x Genomics into searchable methods, software, datasets, and code links, with task-specific extraction evaluation.</p>
-          <a class="text-link" href="https://binfowise.skillpie.io/">Explore BinfoWise <span aria-hidden="true">↗</span></a>
-        </article>
+      <article id="software" class="expertise-area" aria-labelledby="software-title" data-evidence="P05 P06 P07 P08">
+        <h3 id="software-title">Scientific software<br> &amp; workflows</h3>
+        <div class="area-content">
+          <p>I design analytical workflows and build the tools that make them reusable, from transcriptomic annotation to sequencing-data submission and reproducible software distribution.</p>
+          <ul class="evidence-links" aria-label="Scientific software">
+            <li><a href="https://bioconductor.org/packages/release/bioc/html/RCAS.html"><span>RCAS</span><span aria-hidden="true">↗</span></a><span class="link-context">Original workflow &amp; foundational code</span></li>
+            <li><a href="https://github.com/usegalaxy-eu/ena-upload-cli"><span>ena-upload-cli</span><span aria-hidden="true">↗</span></a><span class="link-context">Original design &amp; foundational code</span></li>
+            <li><a href="https://doi.org/10.1093/nar/gkx409"><span>RNA workbench</span><span aria-hidden="true">↗</span></a><span class="link-context">Galaxy tools &amp; workflows</span></li>
+          </ul>
+        </div>
+      </article>
 
-        <article class="project-card accent-red">
-          <div class="project-meta"><span>Concept + supervision</span><span>Network biology</span></div>
-          <h3>AxoWise</h3>
-          <p>Protein-network clustering and functional interpretation developed through supervised student projects and applied with experimental collaborators in a published neuroimmune study.</p>
-          <div class="link-row">
-            <a class="text-link" href="https://github.com/BackofenLab/AxoWise">GitHub <span aria-hidden="true">↗</span></a>
-            <a class="text-link" href="https://doi.org/10.1016/j.neuron.2025.02.018">Neuron study <span aria-hidden="true">↗</span></a>
-          </div>
-        </article>
-
-        <article class="project-card accent-green">
-          <div class="project-meta"><span>Original workflow + foundational code</span><span>R/Bioconductor</span></div>
-          <h3>RCAS</h3>
-          <p>An end-to-end workflow for annotating transcriptomic regions of interest and assessing their functional associations. Published with equal-contribution first authorship.</p>
-          <div class="link-row">
-            <a class="text-link" href="https://bioconductor.org/packages/release/bioc/html/RCAS.html">Bioconductor <span aria-hidden="true">↗</span></a>
-            <a class="text-link" href="https://doi.org/10.1093/nar/gkx120">Publication <span aria-hidden="true">↗</span></a>
-          </div>
-        </article>
-      </div>
+      <article id="training" class="expertise-area" aria-labelledby="training-title" data-evidence="P04 P07">
+        <h3 id="training-title">Training<br> &amp; collaboration</h3>
+        <div class="area-content">
+          <p>I teach bulk and single-cell RNA-seq analysis, supervise computational research projects and work with experimental scientists to turn analytical results into biological insight.</p>
+          <ul class="evidence-links" aria-label="Training and supervision evidence">
+            <li><a href="https://doi.org/10.1016/j.cels.2018.05.012"><span>Community-driven training</span><span aria-hidden="true">↗</span></a><span class="link-context">Cell Systems publication</span></li>
+            <li><a href="https://github.com/BackofenLab/AxoWise"><span>AxoWise</span><span aria-hidden="true">↗</span></a><span class="link-context">Project conception &amp; student supervision</span></li>
+          </ul>
+        </div>
+      </article>
     </section>
 
-    <section id="approach" class="section approach" aria-labelledby="approach-title">
-      <div class="section-heading compact">
-        <p class="eyebrow">How I work</p>
-        <h2 id="approach-title">A useful analysis ends with a decision</h2>
-      </div>
-      <div class="approach-grid">
-        <div><strong>01</strong><h3>Frame</h3><p>Start with the biological question, experimental unit, and limits of inference.</p></div>
-        <div><strong>02</strong><h3>Build</h3><p>Turn analytical decisions into reproducible, inspectable workflows.</p></div>
-        <div><strong>03</strong><h3>Interpret</h3><p>Connect quantitative results to biological evidence without hiding uncertainty.</p></div>
-        <div><strong>04</strong><h3>Transfer</h3><p>Deliver reports, software, and training that other researchers can use.</p></div>
-      </div>
-    </section>
-
-    <section class="section supporting" aria-labelledby="supporting-title">
-      <div class="section-heading compact">
-        <p class="eyebrow">Supporting work</p>
-        <h2 id="supporting-title">Research infrastructure and community delivery</h2>
-      </div>
-      <div class="support-list">
-        <a href="https://github.com/usegalaxy-eu/ena-upload-cli"><span>ENA submission tooling</span><small>Original design and foundational code for sequencing-data and metadata validation and submission</small><b aria-hidden="true">↗</b></a>
-        <a href="https://doi.org/10.1093/nar/gkx409"><span>Galaxy RNA workbench</span><small>Tools and reproducible workflows for RNA and high-throughput sequencing analysis</small><b aria-hidden="true">↗</b></a>
-        <a href="https://doi.org/10.1016/j.cels.2018.05.012"><span>Researcher training</span><small>Bulk and single-cell RNA-seq training and community-driven training infrastructure</small><b aria-hidden="true">↗</b></a>
-        <a href="https://github.com/bioconda/bioconda-recipes"><span>Bioconda</span><small>Past top contributor packaging bioinformatics tools for reproducible installation</small><b aria-hidden="true">↗</b></a>
-      </div>
-    </section>
-
-    <section id="publications" class="section publications" aria-labelledby="publications-title">
-      <div>
-        <p class="eyebrow">Selected publications</p>
-        <h2 id="publications-title">Evidence of collaborative delivery</h2>
-      </div>
-      <div class="publication-list">
-        <a href="https://doi.org/10.1016/j.neuron.2025.02.018"><span>2025 · Neuron</span><strong>Transcriptional atlas of gut-innervating neurons during intestinal inflammation</strong></a>
-        <a href="https://doi.org/10.1093/bioinformatics/btab421"><span>2021 · Bioinformatics</span><strong>Programmatic SARS-CoV-2 sequence submission to the European Nucleotide Archive</strong></a>
-        <a href="https://doi.org/10.1093/nar/gkx120"><span>2017 · Nucleic Acids Research</span><strong>RCAS: RNA-centric annotation of transcriptome-wide regions of interest</strong></a>
-        <a class="all-publications" href="https://scholar.google.com/citations?user=iHL58lUAAAAJ&amp;hl=en">View full publication record <span aria-hidden="true">↗</span></a>
-      </div>
-    </section>
   </main>
 
-  <footer>
-    <div><strong>Dilmurat Yusuf</strong><span>Bioinformatics · Freiburg, Germany</span></div>
-    <a href="mailto:dilmurat.yusuf@gmail.com">dilmurat.yusuf@gmail.com</a>
-    <p>Selected work and evidence, updated 2026.</p>
+  <footer id="contact">
+    <div>
+      <span class="footer-label">Contact</span>
+      <div class="footer-links">
+        <a href="mailto:dilmurat.yusuf@gmail.com">dilmurat.yusuf@gmail.com</a>
+        <a href="https://www.linkedin.com/in/dilmurat-yusuf">LinkedIn <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+    <p>Dilmurat Yusuf <span aria-hidden="true">·</span> Freiburg, Germany</p>
   </footer>
 </body>
 </html>
