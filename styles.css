@@ -38,7 +38,6 @@ main, .site-header { width: min(var(--page-width), calc(100% - var(--gutter) * 2
   justify-content: space-between;
   gap: 24px;
   padding-block: 16px;
-  border-bottom: 1px solid var(--line);
   background: var(--paper);
 }
 .site-header::before {
@@ -48,10 +47,19 @@ main, .site-header { width: min(var(--page-width), calc(100% - var(--gutter) * 2
   z-index: -1;
   background: var(--paper);
 }
+.site-header::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: min(100%, calc(980px + clamp(20px, 3vw, 36px)));
+  height: 1px;
+  background: var(--line);
+  content: "";
+}
 .identity { flex-shrink: 0; text-decoration: none; }
 .identity-name { display: block; font-size: 22px; line-height: 1.2; letter-spacing: -.02em; }
 .identity-role { display: block; margin-top: 4px; color: var(--muted); font-size: 13px; line-height: 1.3; }
-.site-header nav { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 25px; }
+.site-header nav { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 25px; margin-right: min(104px, 7vw); }
 .site-header nav a { padding-block: 5px; font-size: 15px; text-decoration: none; }
 .site-header nav a:hover { text-decoration: underline; }
 
@@ -107,7 +115,8 @@ h1 { margin-bottom: 17px; font-size: clamp(38px, 5.5vw, 64px); line-height: 1.08
 @media (max-width: 800px) {
   html { scroll-padding-top: 24px; }
   .site-header { position: relative; flex-direction: column; align-items: flex-start; gap: 11px; padding-block: 15px 10px; }
-  .site-header nav { gap: 6px 21px; }
+  .site-header::after { width: 100%; }
+  .site-header nav { gap: 6px 21px; margin-right: 0; }
   .introduction { padding-block: 26px; }
   .section-heading, .expertise-area { grid-template-columns: 1fr; gap: 2px; }
   .section-heading::before, .section-heading::after { left: 0; width: 100%; }
