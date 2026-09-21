@@ -59,14 +59,14 @@ main, .site-header { width: min(var(--page-width), calc(100% - var(--gutter) * 2
 .overline { margin-bottom: 14px; color: var(--accent); font-size: 13px; letter-spacing: .09em; text-transform: uppercase; }
 h1 { margin-bottom: 17px; font-size: clamp(38px, 5.5vw, 64px); line-height: 1.08; letter-spacing: -.04em; }
 .introduction-text { max-width: 730px; margin-bottom: 13px; color: var(--muted); font-size: 19px; line-height: 1.55; text-wrap: pretty; }
-.section-heading { display: grid; grid-template-columns: .82fr 1.18fr; column-gap: clamp(30px, 6vw, 90px); align-items: baseline; padding-block: 10px; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--line); }
+.section-heading { display: grid; grid-template-columns: minmax(250px, 300px) minmax(0, 1fr); column-gap: clamp(20px, 3vw, 36px); align-items: baseline; padding-block: 10px; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--line); }
 .section-heading h2 { font-size: 14px; letter-spacing: .03em; }
 .section-heading > span { justify-self: start; color: var(--muted); font-size: 13px; }
 
 .expertise-area {
   display: grid;
-  grid-template-columns: .82fr 1.18fr;
-  gap: clamp(30px, 6vw, 90px);
+  grid-template-columns: minmax(250px, 300px) minmax(0, 1fr);
+  gap: clamp(20px, 3vw, 36px);
   padding-block: 23px 24px;
   border-bottom: 1px solid var(--line);
 }
