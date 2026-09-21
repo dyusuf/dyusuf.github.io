@@ -23,6 +23,7 @@ where they clarify design, development or supervision.
 
 - `bioinformatics-courses` owns the vascular-repair case study and workflow.
 - `BinfoNet` owns its evidence-retrieval implementation and evaluation.
+- `BinfoCheck` owns its AI-search measurement implementation, tests, and project documentation.
 - `BinfoWise` owns its literature-mining application.
 - Upstream repositories own AxoWise, RCAS, ena-upload-cli, Galaxy, and Bioconda artifacts.
 - This repository owns only the cross-project public presentation.
