@@ -59,16 +59,39 @@ main, .site-header { width: min(var(--page-width), calc(100% - var(--gutter) * 2
 .overline { margin-bottom: 14px; color: var(--accent); font-size: 13px; letter-spacing: .09em; text-transform: uppercase; }
 h1 { margin-bottom: 17px; font-size: clamp(38px, 5.5vw, 64px); line-height: 1.08; letter-spacing: -.04em; }
 .introduction-text { max-width: 730px; margin-bottom: 13px; color: var(--muted); font-size: 19px; line-height: 1.55; text-wrap: pretty; }
-.section-heading { display: grid; grid-template-columns: minmax(250px, 300px) minmax(0, 1fr); column-gap: clamp(20px, 3vw, 36px); align-items: baseline; padding-block: 10px; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--line); }
+.section-heading { position: relative; display: grid; grid-template-columns: minmax(250px, 300px) minmax(0, 1fr); column-gap: clamp(20px, 3vw, 36px); align-items: baseline; padding-block: 10px; }
+.section-heading::before,
+.section-heading::after {
+  position: absolute;
+  left: 0;
+  width: min(100%, calc(980px + clamp(20px, 3vw, 36px)));
+  height: 1px;
+  background: var(--line);
+  content: "";
+}
+.section-heading::before { top: 0; background: var(--ink); }
+.section-heading::after { bottom: 0; }
 .section-heading h2 { font-size: 14px; letter-spacing: .03em; }
 .section-heading > span { justify-self: start; color: var(--muted); font-size: 13px; }
 
 .expertise-area {
+  position: relative;
   display: grid;
   grid-template-columns: minmax(250px, 300px) minmax(0, 1fr);
   gap: clamp(20px, 3vw, 36px);
   padding-block: 23px 24px;
-  border-bottom: 1px solid var(--line);
+}
+.expertise-area::after {
+  position: absolute;
+  bottom: 0;
+  left: calc(300px + clamp(20px, 3vw, 36px));
+  width: min(680px, calc(100% - 300px - clamp(20px, 3vw, 36px)));
+  height: 1px;
+  background: var(--line);
+  content: "";
+}
+.expertise-area:last-child::after {
+  display: none;
 }
 .expertise-area h3 { font-size: clamp(26px, 2.5vw, 32px); line-height: 1.2; letter-spacing: -.02em; text-wrap: balance; }
 .area-content { min-width: 0; }
@@ -87,6 +110,8 @@ h1 { margin-bottom: 17px; font-size: clamp(38px, 5.5vw, 64px); line-height: 1.08
   .site-header nav { gap: 6px 21px; }
   .introduction { padding-block: 26px; }
   .section-heading, .expertise-area { grid-template-columns: 1fr; gap: 2px; }
+  .section-heading::before, .section-heading::after { left: 0; width: 100%; }
+  .expertise-area::after { left: 0; width: 100%; }
   .expertise-area { padding-block: 20px 22px; }
   .expertise-area h3 br { display: none; }
   .expertise-area h3 { font-size: 28px; }
